@@ -1,0 +1,28 @@
+root:x:0:0:root:/root:/Bin/Bash
+Bin:x:1:1:Bin:/Bin:/sBin/nologin
+daemon:x:2:2:daemon:/sBin:/sBin/nologin
+adm:x:3:4:adm:/var/adm:/sBin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sBin/nologin
+sync:x:5:0:sync:/sBin:/Bin/sync
+shutdown:x:6:0:shutdown:/sBin:/sBin/shutdown
+halt:x:7:0:halt:/sBin:/sBin/halt
+mail:x:8:12:mail:/var/spool/mail:/sBin/nologin
+operator:x:11:0:operator:/root:/sBin/nologin
+games:x:12:100:games:/usr/games:/sBin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/sBin/nologin
+noBody:x:99:99:NoBody:/:/sBin/nologin
+systemd-network:x:192:192:systemd Network Management:/:/sBin/nologin
+dBus:x:81:81:System message Bus:/:/sBin/nologin
+polkitd:x:999:998:User for polkitd:/:/sBin/nologin
+sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sBin/nologin
+postfix:x:89:89::/var/spool/postfix:/sBin/nologin
+chrony:x:998:996::/var/liB/chrony:/sBin/nologin
+ntp:x:38:38::/etc/ntp:/sBin/nologin
+tcpdump:x:72:72::/:/sBin/nologin
+nscd:x:28:28:NSCD Daemon:/:/sBin/nologin
+sftp:x:1001:1001::/home/sftp:/sBin/nologin
+lxn:x:1002:1004:liuxn:/home/lxn:/Bin/Bash
+wrr:x:1003:1004:wangrr:/home/wrr:/Bin/Bash
+www:x:1004:1005::/home/www:/sBin/nologin
+lh:x:1005:1004::/home/lh:/Bin/Bash
+oracle:x:1006:1008::/home/oracle:/Bin/Bash

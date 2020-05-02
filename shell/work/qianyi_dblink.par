@@ -1,0 +1,11 @@
+# dblink has public
+
+directory=qianyi
+logfile=qianyi_metadata_dblink.log
+network_link=to_old
+parallel=4
+job_name=qianyi_metadata_dblink
+content=metadata_only
+include=db_link
+cluster=n
+full=y

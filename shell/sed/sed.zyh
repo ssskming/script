@@ -1,0 +1,46 @@
+参数
+-n 只打印匹配行
+命令
+p 打印
+g 全局
+2g 同一行中前两到匹配的内容
+d 删除
+a 匹配到的行后追加内容
+i  匹配到的行前追加内容
+r 外后面批指定外部文件读入，追加到匹配的行后
+w 将匹配的行的内容另存到其它文件中
+= 显示行号
+s 替换
+pattern用法
+直接指定行号
+sed -n "7p" passwd
+指定起始行号和结束行号
+sed -n "10,20p" passwd
+指定起始行号，然后加上后面几行
+sed -n "10,+5p" passwd
+正则表达式匹配的行
+sed -n "/^root/p" passwd
+匹配pattern1,到pattern2中间的行
+sed -n "/^ftp/^mail/p" passwd
+从指定的行到pattern中间的行
+sed -n "5,/^ftp/p" passwd
+从pattern匹配行开始到指定的行
+sed -n "/^root/,10p" passwd
+sed编辑
+d 删除
+s/old/new  行内第一个替换
+s/old/new/g 行内全部的old进行替换
+s/old/new/2g 行内前2个old进行替换
+s/old/new/ig 行内所有old进行替换，并忽略大小写
+sed -i '/^ftp/,+2i AAA' sed.txt  匹配行，行前追加内容
+sed -i '/^ftp/,+2a AAA' sed.txt  匹配行，行前追加内容
+sed -i '/^ftp/r file.txt' sed.txt  将file.txt文件内容追加到匹配行的后面。
+sed -n '/^ftp/w ftp.txt' sed.txt  将匹配的行的内容存入ftp.txt文件中
+= 命令输出行号
+#输出多个文件的最后一行并标出行号
+# -s 多个文件分开处理
+# = 输出行号
+sed -n -s '${p;=}' passwd.txt bak.txt
+输出以重写字符开头的行和行号
+sed -n '/^[ \t]*DocumentRoot/{p;=]' httpd.conf
+

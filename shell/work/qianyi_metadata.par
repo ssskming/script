@@ -1,0 +1,34 @@
+
+# impdp parameter
+
+# impdp user/passwd parfile=qianyi_metadata.par
+# new database create directory
+# create directory qianyi as '/home/oracle/qianyi'
+# 
+###############################################
+# parameter:
+# 1. directory    database directory <==> computer directory
+# 2. logfile      log file name
+# 3. network_link remote scr database link
+# 4. parallel     parallel number
+# 5. job_name     job name
+# 6. schemas      schema name
+# 7. content      metadata_only or all or data_only
+# 8. exclude      no impdp
+# 9. cluster      no or yes
+# 10.remap_tablespace  old <==> new tablespace
+################################################
+
+directory=qianyi
+logfile=qianyi_metadata.log
+network_link=to_old
+parallel=2
+job_name=qianyi_metadata_user
+schemas=user1,user2,user3
+content=metadata_only
+exclude=grant
+exclude=table_statistics
+exclude=job
+cluster=n
+remap_tablespace=tbs_old1:tbs_new1,
+tbs_old2:tbs_new2
