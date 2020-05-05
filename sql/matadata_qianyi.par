@@ -1,0 +1,14 @@
+
+directory=qianyi
+logifle=qianyi.log
+network=to_old
+parallel=8
+job_name=qianyi_002
+schemas=SCHEMA1,SCHEMA2,SCHEMA3
+content=metadata_only
+exclude=grant
+exclude=table_statistics
+exclude=job
+cluster=N
+remap_tablespace=tablespace_old:tablespace_new,
+tablespace_old2:tablespace_new2

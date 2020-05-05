@@ -1,0 +1,8 @@
+directory=qianyi
+logfile=qianyi_dblink.log
+network=to_old
+parallel=8
+include=DB_LINK
+full=y
+content=metadata_only
+
