@@ -1,0 +1,20 @@
+
+# 数据库迁移中的元数据迁移
+
+# 准备工作
+
+# 1. 检查临时表空间组
+
+select * from dba_tablespace_groups;
+
+# 修改表空间组
+
+alter tablespace temp tablespace group  temp_groups_name;
+
+# 根据源库创建特殊Profile
+# 根据源库创建role
+# 创建新老库dblink
+
+
+
+
