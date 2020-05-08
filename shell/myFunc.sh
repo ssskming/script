@@ -1,5 +1,14 @@
 #!/bin/bash
 
+: '
+ 自定义函数，使用: 1. source ./myFunc.sh  2.  . ./myFunc.sh
+
+ 函数 
+	1. logErr <argv>   输出错误日志
+	2. logInfo <argv>  输出INFO输出
+	3. current_dir     输出当前目录
+'
+
 # Print error log
 function logErr
 {
