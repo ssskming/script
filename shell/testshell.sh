@@ -9,3 +9,14 @@ echo ${a}
 echo ${0}
 echo ${1}
 echo ${2}
+. ./myFunc.sh
+logErr ${a}
+logInfo ${a}
+
+dir=$(cd $(dirname $0);pwd)
+
+logInfo "************当前目录 ${dir} **********************"
+
+
+current_dir=$(current_dir)
+logInfo "************ $current_dir **************************************"
